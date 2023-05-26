@@ -45,7 +45,7 @@ public class Centro {
     }     
 
     /*
-     * M�TODOS DE FACTOR�A
+     * MÉTODOS DE FACTORÍA
      */
     public static Centro of() {
         if (Centro.centro == null)
@@ -102,7 +102,7 @@ public class Centro {
 
     
     /*
-     * OTROS M�TODOS
+     * OTROS MÉTODOS
      */
     
     
@@ -203,13 +203,13 @@ public class Centro {
         System.out.println(String.format("- Hay %d grupos en el centro", 
         		c.numeroDeGruposF()));
         
-        System.out.println("----------------------\n>> A�adiendo asignaciones");
+        System.out.println("----------------------\n>> Añadiendo asignaciones");
     	c.addAsignaciones();
-    	System.out.println(String.format("- El n�mero de asignaciones es:\n %d", 
+    	System.out.println(String.format("- El número de asignaciones es:\n %d", 
         		c.asignacionDeProfesores.size()));
-        System.out.println("----------------------\n>> A�adiendo matr�culas");
+        System.out.println("----------------------\n>> Añadiendo matrículas");
     	c.addMatriculas();  
-    	System.out.println(String.format("- El n�mero de matr�culas es:\n %d", 
+    	System.out.println(String.format("- El número de matrículas es:\n %d", 
         		c.matriculas.size()));
     	
     	String dni = "53045701L";
@@ -226,7 +226,7 @@ public class Centro {
     	
     	Integer pos = 200;
     	Alumno a = c.alumno(pos);
-    	System.out.println(String.format("- El alumno que se encuentra en la posici�n %d es %s\n----------------------", 
+    	System.out.println(String.format("- El alumno que se encuentra en la posición %d es %s\n----------------------", 
         		pos, a));
     	
     	Set<Asignatura> ac = c.asignaturasCursadas(a);
