@@ -95,7 +95,6 @@ public class Centro {
     }
     
     public Integer numeroDeGruposF() {
-        //TODO COMENTAR MIGUEL return (int) this.matriculas.stream().map(m->m.idg()).count();
     	return this.asignaturas.stream().mapToInt(a -> a.numGrupos()).sum();
     }
     
